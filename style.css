@@ -1,0 +1,1304 @@
+body{
+    
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif ;
+    list-style: none;
+    text-decoration: none;
+}
+.header
+{
+   position: fixed;
+    top: 0;
+    width: 100%;
+    background: black;
+    height: 88px;
+    position: sticky;
+    z-index: 100;
+    
+}
+.header .navbar
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: black;
+    height: inherit;
+    display: flex; 
+    
+    
+}
+/* logo-------------------------------------------------------------------- */
+.header .navbar .logo
+{
+    flex-basis: 10%;
+    background: rgb(0, 0, 0);
+    display: flex;
+}
+.logo h1{
+    font-weight: 800;
+    font-size: 42px;
+    margin-left: 63px;
+    color: white;
+    position: relative;
+    top: 10px;
+
+}
+/* navitems-------------------------------------------------------------------------------- */
+.header .navbar .navitems
+{
+    flex-basis: 65%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    
+}
+.header .navbar .lastitmes  
+{
+    flex-basis: 30%;
+    background: rgb(0, 0, 0);
+}
+.navlist
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;   
+   gap: 20px;
+
+}
+.navlist li button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+    font-weight: 700;
+    color: white;
+    font-size: 15px;
+}
+.vehicle    
+{
+    width: 100%;
+    background: white;
+    position: absolute;
+    top: -250px;
+    left: 0px;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-auto-rows: minmax(50px,auto);
+    padding-bottom: 10px;
+    transition: all .5s ease-in-out;
+    
+    
+    
+}
+.navlist .vehiclebutton:focus ~ .vehicle
+{
+    opacity: 1;
+    pointer-events: all;
+    top: 89px;
+   
+}
+/* .container making uder---------------------------------- */
+
+/* vehicle droopdown stylling ------------------------------------- */
+.vehicle .grid1
+{
+    background: white;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.vehicle .grid1 span
+{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.vehicle .grid1 span::after
+{
+    content: '';
+    display: block;
+    width: 1490px;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.541);
+    position: relative;
+    top: 8px;
+
+}
+/* grid 2 styling--------------------------------------------------------- */
+.grid2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-right: 80px;
+}
+.vehicle .grid2 .vehiclename
+{
+    font-size: 16px;
+    font-family: revert;
+    font-weight: 600;
+
+}
+
+.vehicle .grid2 .note
+{
+    font-size: 10px;
+    font-family: revert;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.486);
+}
+.vehicle .grid2 .pricedes
+{
+    font-size: 7px;
+    font-family: revert;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.486);
+    position: relative;
+    top: 17px;
+}
+.vehicle .grid2 .price
+{
+    font-size: 19px;
+    font-family: revert;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+/* grid 3 styling---------------------------------------------------- */
+.vehicle .grid3
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-right: 80px;
+}
+.vehicle .grid3 .vehiclename
+{
+    font-size: 16px;
+    font-family: revert;
+    font-weight: 600;
+
+}
+
+.vehicle .grid3 .note
+{
+    font-size: 10px;
+    font-family: revert;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.486);
+}
+.vehicle .grid3 .pricedes
+{
+    font-size: 7px;
+    font-family: revert;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.486);
+    position: relative;
+    top: 17px;
+}
+.vehicle .grid3 .price
+{
+    font-size: 19px;
+    font-family: revert;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+/* grid4-----------styiling------------------------------------------------- */
+.vehicle .grid4
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-right: 80px;
+}
+.vehicle .grid4 .vehiclename
+{
+    font-size: 16px;
+    font-family: revert;
+    font-weight: 600;
+
+}
+
+.vehicle .grid4 .note
+{
+    font-size: 10px;
+    font-family: revert;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.486);
+}
+.vehicle .grid4 .pricedes
+{
+    font-size: 7px;
+    font-family: revert;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.486);
+    position: relative;
+    top: 17px;
+}
+.vehicle .grid4 .price
+{
+    font-size: 19px;
+    font-family: revert;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+/* grid--------5------styling------------------------------------------------------------------------------- */
+.vehicle .grid5
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding-right: 80px;
+
+
+}
+.vehicle .grid5 .vehiclename
+{
+    font-size: 16px;
+    font-family: revert;
+    font-weight: 600;
+
+}
+
+.vehicle .grid5 .note
+{
+    font-size: 10px;
+    font-family: revert;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.486);
+}
+.vehicle .grid5 .pricedes
+{
+    font-size: 7px;
+    font-family: revert;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.486);
+    position: relative;
+    top: 17px;
+}
+.vehicle .grid5 .price
+{
+    font-size: 19px;
+    font-family: revert;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+/* vehicle finished------------------------------------------------------------------------------------- */
+/* shipings working and animation------------------------------------------ */
+.shiping-tools
+{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.97);
+    position: absolute;
+    left: 0px;
+    display: grid;
+    opacity: 0;
+    top: -290px;
+    z-index: -1;
+    grid-template-columns: repeat(3,auto);
+    grid-auto-rows: minmax(200px,auto);
+    column-gap: 1px;
+    transition: all .5s ease-in-out;
+}
+.hai .SHIPPING:focus ~ .shiping-tools
+{
+    opacity: 1;
+    top: 90px;
+    z-index: 1;
+}
+/* grid design--------------------------------------------- */
+.shiping-tools .grid1{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+}
+.shiping-tools .grid2{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  
+}
+.shiping-tools .grid3{
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+}
+ /* grid1 contend design-------------------------------- */
+.shiping-tools .grid1 .heading
+{
+ font-size: 15px;
+ color: black;
+ font-weight: 600;
+}
+.shiping-tools .grid1 ul{
+    margin-left: 90px;
+}
+.shiping-tools .grid1 ul li{
+    color: rgba(0, 0, 0, 0.564);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;  
+}
+/* grid2 contend design -------------------------------------
+ */
+ .shiping-tools .grid2 .heading
+{
+ font-size: 15px;
+ color: black;
+ font-weight: 600;
+}
+.shiping-tools .grid2 ul{
+    margin-left: 90px;
+}
+.shiping-tools .grid2 ul li{
+    color: rgba(0, 0, 0, 0.564);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;  
+    margin-left: -15px;
+}
+
+/* grid 3 contend design----------------------------- */
+.shiping-tools .grid3 .heading
+{
+ font-size: 15px;
+ color: black;
+ font-weight: 600;
+}
+.shiping-tools .grid3 ul{
+    
+    margin-left: 90px;
+}
+.shiping-tools .grid3 ul li{
+    color: rgba(0, 0, 0, 0.564);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;  
+    margin-left: -130px;
+}
+
+/* shop tools finished-------------------------------------------------------------------- */
+.serivce
+{
+    width: 100%;
+    background: rgba(11, 7, 7, 0.97);
+    position: absolute;
+    left: 0px;
+    display: grid;
+    grid-template-columns:  579px 500px 557px;
+    grid-auto-rows: minmax(200px,auto);
+    column-gap: 1px;
+    opacity: 0;
+    z-index: -1;
+    top: -390px;
+    transition: all .5s ease-in-out;
+    
+}
+.hai .services:focus ~ .serivce{
+
+    top: 89px;
+    opacity: 1;
+    z-index: 1;
+}
+.serivce .grid1{
+    background-color: white;
+}
+.serivce .grid2{
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.serivce .grid3{
+    background-color: white;
+}
+.serivce .grid2 ul li{
+color: rgba(0, 0, 0, 0.564);
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 14px;
+margin-top: 10px;  
+margin-left: -15px;
+}
+
+/* jeep life---------------------------------- */
+
+.jeeplife
+{
+    width: 100%;
+    background: rgba(225, 221, 221, 0.97);
+    position: absolute;
+    left: 0px;
+    opacity: 0  ;
+    display: grid;
+    top: -200px;
+    column-gap: 1px;
+    grid-template-columns: repeat(2,auto);
+    grid-auto-rows: minmax(00px,auto);
+    transition: all .5s ease-in-out;
+
+}
+.hai .jeeplif:focus ~ .jeeplife
+{
+    opacity: 1;
+    z-index: 1;
+    top: 89px;
+}
+/* jeep life grid styling ------------------------ */
+.jeeplife .grid1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+}
+.jeeplife .grid2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+}
+/* jeep life grid contend styling ----------------------------------------------- */
+.jeeplife .grid2 ul{
+    margin-top: -20px;
+}
+.jeeplife .grid2 ul li{
+color: rgba(0, 0, 0, 0.564);
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 14px;
+margin-top: 10px;  
+margin-left: -29px;
+}
+.jeeplife .grid1 ul li{
+    color: rgba(0, 0, 0, 0.564);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;  
+    margin-left: -15px;
+}
+.jeeplife .grid2 p
+{
+    font-size: 20px;
+    font-weight: 700;
+}
+.jeeplife .grid1 p
+{
+    font-size: 20px;
+    font-weight: 700;
+    margin-left: -17px;
+}
+    
+/* explore 360---------------------------------------------------------------- */
+/* explore 360 animation-------------------------- */
+.explore360
+{
+    width: 100%;
+    background: rgba(0, 0, 0, 0.685);
+    position: absolute;
+    left: 0px;
+    display: grid;
+    column-gap: 1px;
+    grid-template-columns: repeat(3,auto);
+    grid-auto-rows: minmax(100px,auto);
+    transition: all .5s ease-in-out;
+    top: -100px;
+    opacity: 0;
+    z-index: -1;
+}
+.hai .explore:focus ~ .explore360
+{
+    
+    top: 89px;
+    opacity: 1;
+    z-index: 1;
+}
+/* explore 360 grid --------------------------- */
+.explore360 .grid2,.grid1,.grid3
+{
+    background: white;
+    padding: 20px 0;
+}
+/* explore 360 contend design----------------------------------------------- */
+.explore360 .grid2 ul li
+{
+    color: rgba(0, 0, 0, 0.564);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    margin-top: 10px;  
+    margin-left: -15px;
+}
+
+/* nav items finished------------------------------ */
+.lastitmes
+{
+    display: flex;
+    align-items: center;
+}
+.lastitmes ul
+{
+    display: flex;
+    gap: 30px;
+}
+.lastitmes ul li
+{
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    color: white;
+    font-weight: 700;
+    color: white;
+    font-size: 15px;
+}
+.container
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background: black;
+    padding: 0px 40px;
+   
+    
+    
+}
+.container img{
+    width: 100%;
+    z-index: 1;  
+    
+
+}
+
+.jeep-vehicles
+{
+    width: 100%;
+    background: white;
+}
+
+.jeep-vehicles
+
+{
+   
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4,auto);
+    grid-auto-rows: minmax(100px,auto);
+    
+}
+.jeep-vehicles .grid1{
+    display: flex;
+    justify-content: center;
+    background: rgb(247, 247, 246);
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+.jeep-vehicles .grid2
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;  
+
+}
+
+
+.jeep-vehicles .grid3
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;  
+    
+}
+
+.jeep-vehicles .grdi4
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    z-index: 1;  
+}
+.jeep-vehicles .grid5
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    z-index: 1;  
+}
+.jeep-vehicles .grid2,.grid3 label
+{
+    color: rgb(0, 0, 0);
+    border-bottom: 20px;
+    font-weight: 600;
+}
+.jeep-vehicles .grdi4,.grid5 label{
+ 
+    color: rgb(0, 0, 0);
+    border-bottom: 20px;
+    font-weight: 600;
+    position: relative;
+    top: 20px;
+}
+/* jeep vehicles finished------------------------------------------------- */
+/* separator starting-------------------------------------- */
+.separator
+{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+/* about--------------------------------------------------------------- */
+.about
+{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-auto-rows: minmax(0px,auto);
+    background: rgb(211, 196, 196);
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 150px;
+}
+
+.about .grid1 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    background-color: rgba(0, 255, 255, 0);
+}
+.about .grid1 img{
+    position: relative;
+    bottom: 20px;
+}
+.about .grid1 label
+{
+    position: absolute;
+    background: white;
+    left: 0px;
+    bottom: 22px;
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: 600;
+
+}
+.about .grid1 label i{
+    color: rgb(233, 176, 4);
+    position: relative;
+    top: 5px;
+}
+
+.about .grid2{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+.about .grid2 img{
+    height: 317px;
+}
+.about .grid2 label
+{
+    position: absolute;
+    background: white;
+    left: 0px;
+    bottom: 22px;
+    width: 506px;
+    height: 25px;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: 600;
+}
+.about .grid2 label i{
+    color: rgb(233, 176, 4);
+    position: relative;
+    top: 5px;
+}
+
+.about .grid3 {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    background-color: transparent;
+}
+.about .grid3 img{
+    position: relative;
+    bottom: 20px;
+}
+.about .grid3 label
+{
+    position: absolute;
+    background: white;
+    left: 0px;
+    bottom: 22px;
+    width: 100%;
+    height: 25px;
+    display: flex;
+    justify-content: flex-end;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: 600;
+
+}
+.about .grid3 label i{
+    color: rgb(233, 176, 4);
+    position: relative;
+    top: 5px;
+}
+/* botttom search---------------------------------------- */
+.contact
+{
+    width: 100%;
+    height: 120px;
+   cursor: pointer;
+    display: flex;
+    gap: 20px;
+    background: rgb(34, 32, 32);
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+.contact .bottomlist
+{
+   
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+
+}
+.contact .bottomlist ul{
+  
+    display: flex;
+    gap: 50px;
+    padding-left: 30px;
+    
+}
+.contact .bottomlist ul li{
+    color: rgb(226, 209, 209);
+    cursor: pointer;
+}
+
+/* bottom search-------------------------------- */
+.contact .bottomsearch
+{
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+
+}
+.contact .bottomsearch .searc
+{
+    display: block;
+    gap: 20px;
+    background: yellow;
+    width: 300px;
+   
+
+}
+.contact .bottomsearch .searc input
+{
+    width: 200px;
+    height: 33px;
+    cursor: pointer;
+}
+.contact .bottomsearch .searc input::placeholder
+{
+    position: relative;
+    left: 20px;
+
+}
+.contact .bottomsearch .searc i{
+    position: absolute;
+    top: 54px;
+    right: 430px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.454);
+}
+.searc .hello:focus ~ .ha{
+    opacity: 0;
+}
+/* sidenav-------------------------- */
+.sidenav
+{
+    position: fixed;
+    width: 50px;
+    gap: 2px;
+    right: 0;
+    top: 300px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+
+}
+/* sidenav -------one--------------- */
+.sidenav .sidnav1
+{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    background-color: yellow;
+    font-size: large;
+    cursor: pointer;
+    
+}
+.doc
+{
+    position: absolute;
+    height: 37PX;
+    right: 50PX;
+    width: 0PX;
+    background: black;
+    color: white;
+    font-size: 10PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s ease-in-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sidenav .sidnav1:hover ~ .doc
+{
+    opacity: 1;
+    pointer-events: all;
+    width: 100px;
+
+
+}
+/* sidenav 2------------------------ */
+.sidenav .sidenav2
+{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    background-color: yellow;
+    font-size: large;
+    cursor: pointer;
+
+}
+.brochure
+{
+    position: absolute;
+    height: 37PX;
+    right: 50PX;
+    width: 0PX;
+    top: 40px;
+    background: black;
+    color: white;
+    font-size: 10PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s ease-in-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sidenav .sidenav2:hover ~ .brochure
+{
+    opacity: 1;
+    pointer-events: all;
+    width: 100px;
+
+
+}
+/* side nav 3----------------------------------------- */
+.sidenav .sidenav3
+{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    background-color: yellow;
+    font-size: large;
+    cursor: pointer;
+
+}
+.testdrive
+{
+    position: absolute;
+    height: 37PX;
+    right: 50PX;
+    width: 0PX;
+    top: 80px;
+    background: black;
+    color: white;
+    font-size: 10PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s ease-in-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sidenav .sidenav3:hover ~ .testdrive
+{
+    opacity: 1;
+    pointer-events: all;
+    width: 100px;
+
+
+}
+/* side nav 4------------------------------- */
+
+ .sidenav .sidenav4
+{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    background-color: yellow;
+    font-size: large;
+    cursor: pointer;
+
+}
+.dealer
+{
+    position: absolute;
+    height: 37PX;
+    right: 50PX;
+    width: 0PX;
+    top: 120px;
+    background: black;
+    color: white;
+    font-size: 10PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .4s ease-in-out;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.sidenav .sidenav4:hover ~ .dealer
+{
+    opacity: 1;
+    pointer-events: all;
+    width: 100px;
+} 
+/* side nav 5------------------------------------ */
+
+
+
+/* vehicle features---------------------------------------------------------------- */
+.vehiclefeatures
+{
+   
+   padding-bottom: 50px;
+    background: rgb(255, 254, 254);
+
+    width: 100%;
+
+}
+.vehiclefeatures .carbasics
+{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-auto-rows: minmax(100px,auto);
+}
+.vehiclefeatures .carbasics .carpart1
+{
+   background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+.carbasics .carpart1 h1{
+    font-size: 26px;
+
+}
+.carbasics .carpart1 p{
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.566);
+
+}
+
+.vehiclefeatures .carbasics .carpart2
+{
+    background-color: rgb(255, 255, 255);
+}
+.carbasics .carpart1 .colorselector
+{
+    width: 280px;
+    height: 290px;
+    background-color: rgb(226, 217, 217);
+    margin-top: 70px;
+    border-radius: 20px;
+    padding: 10px;
+}
+.carbasics .carpart1 .colorselector p{
+    margin-top: 20px;
+}
+/* color box---------------------- */
+.carbasics .carpart1 .colorselector .colors
+{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    padding: 10px;
+    gap: 20px;
+ 
+}
+.colors .color1
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color:  rgb(212, 204, 204);
+}
+.colors .color2
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color:  gray;
+}
+.colors .color3
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: rgb(0, 0, 0);
+}
+.colors .color4
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: rgb(120, 19, 19);
+}
+.colors .color5
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: rgb(17, 28, 21);
+}
+.colors .color6
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: rgb(35, 22, 82);
+}
+.carpart1 button
+{
+    color: white;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 3px 10px;
+    background-color: rgb(112, 96, 96);
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+/* CAR BASI RIGHT PORTION DESIGNING--------------- */
+.carpart2 .BUTTONS
+{
+    padding: 20px;
+    
+}
+.carpart2 .BUTTONS .btntwo
+{
+    width: 200px;
+    position: relative;
+    left: 400px;
+    height: 30px;
+    background-color: rgb(86, 77, 77);
+    color: white;
+    font-weight: 600;
+    border: none;
+
+
+}
+.carpart2 .BUTTONS .btnone
+{
+    width: 200px;
+    position: relative;
+    left: 300px;
+    height: 30px;
+    background-color: rgb(242, 184, 10);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    border: none;
+
+
+}
+
+/* main-parts----------------------------------------------------------------------------- */
+.main-parts
+{
+    
+    display: flex;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    padding: 20px;
+    gap: 20px;
+
+}
+.main-parts .grid1
+{
+    overflow: hidden;
+}
+.main-parts .grid1 image{
+    width: 100%;
+    height: 100%;
+}
+.main-parts .grid1 label
+{
+    margin-left: 20px;
+   position: relative;
+   top: 10px;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   font-weight: 600;
+   font-size: 14px;
+}
+
+/* exterior--------------------------------------------- */
+.exterior
+{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(2,auto);
+    grid-auto-rows: minmax(10px,auto);
+   
+}
+.exterior .grid1{
+ overflow: hidden;
+ padding: 0;
+
+}
+.exterior .grid1 .exphe{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    margin-top: 50px;
+    font-size: 35px;
+    margin-left: 20px;
+
+}
+.exterior .grid1 .exdes
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 100;
+}
+.exterior .grid1 .btn1{
+
+width: 200px;
+position: relative;
+left: 240px;
+height: 30px;
+background-color: rgb(242, 184, 10);
+color: rgb(0, 0, 0);
+font-weight: 600;
+border: none;
+margin-right: 10px;
+top: 20px;
+}
+
+/* full sized image---------------------------- */
+.full-size-image
+{
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
+    margin-top: 20px;
+ 
+ 
+}
+.full-size-image img{
+    position: relative;
+    bottom: 90px;
+}
+
+/* shedule---------------------------------------- */
+.shedule
+{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+}
+.shedule .grid1{
+    
+    overflow: hidden;
+
+}
+.shedule .grid1 img{
+    width: 100%;
+    height: 100%;
+}
+.shedule .grid2 .exphe{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    margin-top: 50px;
+    font-size: 35px;
+    margin-left: 20px;
+
+}
+.shedule .grid2 .exdes
+{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 100;
+}
+.shedule .grid2 .btn1{
+
+width: 200px;
+position: relative;
+left: 240px;
+height: 30px;
+background-color: rgb(242, 184, 10);
+color: rgb(0, 0, 0);
+font-weight: 600;
+border: none;
+margin-right: 10px;
+top: 20px;
+}
